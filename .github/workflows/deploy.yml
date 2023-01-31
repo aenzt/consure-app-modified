@@ -33,4 +33,4 @@ jobs:
           script: |
             cd /home/aenzt/project1
             docker compose down --remove-orphans --volumes
-            docker compose up -d
+            docker compose up --build -d
