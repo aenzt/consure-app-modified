@@ -16,7 +16,7 @@ jobs:
       - name: 📁 Send files via Rsync
         uses: Burnett01/rsync-deployments@5.2.1
         with:
-            switches: -avzr --delete
+            switches: -avzr
             path: .
             remote_path: /home/aenzt/project1
             remote_host: ${{ secrets.SSH_HOST }}
