@@ -30,5 +30,6 @@ jobs:
           username: ${{ secrets.SSH_USERNAME }}
           key: ${{ secrets.SSH_KEY }}
           script: |
+            cd /home/aenzt/project1
             docker compose down --remove-orphans --volumes
             docker compose up -d
