@@ -2,7 +2,7 @@
 name: Deploy Consure App Backend
 on:
   push:
-    branches: [master]
+    branches: [main]
 jobs:
   web-deploy:
     if: "contains(github.event.head_commit.message, 'DEPLOY')"
