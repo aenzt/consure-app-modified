@@ -41,6 +41,9 @@ func main() {
 	if err != nil {
 		panic(err.Error())
 	}
+	router.GET("/", func(ctx *gin.Context) {
+		ctx.JSON(200, "Welcome to Consure App")
+	})
 	router.GET("/ping", func(ctx *gin.Context) {
 		ctx.JSON(200, "pong cd ke tiga")
 	})
